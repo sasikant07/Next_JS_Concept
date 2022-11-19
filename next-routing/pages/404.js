@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageNotFound = () => {
   return (
-    <div>404 Page with all the custom styling necessary</div>
+    <h1>404 Page with all the custom styling necessary</h1>
   )
 }
 
