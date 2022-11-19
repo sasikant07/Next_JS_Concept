@@ -1,13 +1,24 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
 
-const ProductList = () => {
+const ProductList = ({productId = 100}) => {
   return (
     <>
-        <h2>Product 1</h2>
-        <h2>Product 2</h2>
-        <h2>Product 3</h2>
+      <Link href="/">Back</Link>
+      <h2>
+        <Link href="/product/product1">Product 1</Link>
+      </h2>
+      <h2>
+        <Link href="/product/product2">Product 2</Link>
+      </h2>
+      <h2>
+        <Link href="/product/product3" replace>Product 3</Link>
+      </h2>
+      <h2>
+        <Link href={`/product/${productId}`}>Product {productId}</Link>
+      </h2>
     </>
-  )
-}
+  );
+};
 
-export default ProductList
+export default ProductList;

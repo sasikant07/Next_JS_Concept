@@ -1,6 +1,7 @@
 import React from 'react';
 import {useRouter} from 'next/router';
 
+// Nested dynamic routes example
 const Review = () => {
     const router = useRouter();
     const {productId, reviewId} = router.query;
