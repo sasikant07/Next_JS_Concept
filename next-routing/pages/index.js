@@ -8,8 +8,8 @@ const Home = () => {
   // Navigating Programatically
   const handleClick = () => {
     console.log("Placing your order.");
-    // router.push("/product");
-    router.replace("/product");
+    router.push("/product");
+    // router.replace("/product");
   };
 
   return (
