@@ -1,12 +1,12 @@
 import React from 'react';
-import {useRouter} from 'next/router';
+// import {useRouter} from 'next/router';
 
 const Post = ({post}) => {
-    const router = useRouter();
+    // const router = useRouter();
 
-    if (router.isFallback) {
-        return <h1>Loading...</h1>
-    }
+    // if (router.isFallback) {
+    //     return <h1>Loading...</h1>
+    // }
 
   return (
     <>
@@ -45,7 +45,8 @@ export async function getStaticPaths() {
             },
         ],
         // paths,
-        fallback: true,
+        // fallback: true,
+        fallback: 'blocking',
     }
 }
 
