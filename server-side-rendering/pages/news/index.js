@@ -2,7 +2,7 @@ function NewsArticleList({articles}) {
     return (
         <>
             <h1>List of News Articles</h1>
-            {articles?.map(article => {
+            {articles.map(article => {
                 return (
                     <div key={article.id}>
                         <h2>
