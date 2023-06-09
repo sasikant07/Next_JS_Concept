@@ -4,8 +4,8 @@ import {useRouter} from 'next/router';
 const Doc = () => {
     const router = useRouter();
 
-    const {params = []} = router.query;
-    console.log(params);
+    const {params = []} = router.query;   // url: localhost:3000/docs/feature1/concept1/example1
+    console.log(params);            // output: ["feature1", "concept1", "example1"]
 
     if (params.length === 2) {
         return (
